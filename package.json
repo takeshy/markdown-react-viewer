@@ -1,8 +1,27 @@
 {
   "name": "markdown-react-viewer",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.1",
   "type": "module",
+  "description": "A React component for rendering Markdown with GitHub Flavored Markdown support",
+  "main": "dist/markdown-viewer.js",
+  "types": "dist/markdown-viewer.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/takeshy/markdown-react-viewer"
+  },
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "markdown",
+    "viewer",
+    "gfm",
+    "github-flavored-markdown"
+  ],
+  "author": "takeshy",
+  "license": "MIT",
   "scripts": {
     "dev": "vite --host",
     "build": "tsup src/markdown-viewer.tsx",
