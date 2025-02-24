@@ -2,6 +2,11 @@
 
 This is a simple markdown viewer built with React. It uses the [remark-gfm]( github markdown) parser to parse the markdown and then renders it using React components.
 
+## Demo
+
+You can try out  the editor using storybook in the following link:
+https://takeshy.github.io/markdown-react-viewer
+
 ## usage
   
 ```jsx
