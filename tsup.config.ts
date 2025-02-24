@@ -1,7 +1,7 @@
 import { defineConfig } from "tsup"
 
 export default defineConfig([{
-  entry: ["src/markdown-viewer.tsx"],
+  entry: ["src/index.tsx"],
   format: ["esm"],
   dts: false,
   tsconfig: "./tsconfig.tsup.json",
@@ -16,6 +16,7 @@ export default defineConfig([{
   injectStyle: true,
   esbuildOptions(options) {
     options.bundle = true
+    options.minify = true
     options.loader = {
       '.js': 'jsx',
       '.ts': 'tsx',
@@ -24,7 +25,7 @@ export default defineConfig([{
   }
 },
 {
-  entry: ["src/viewer/index.tsx"],
+  entry: ["src/index.tsx"],
   format: ["esm"],
   dts: true,
   outDir: "dist/",

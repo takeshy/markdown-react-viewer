@@ -1,6 +1,7 @@
 import { MarkdownViewer } from './viewer'
 import { createRoot } from "react-dom/client"
 
+export { MarkdownViewer }
 
 type ReadOnlyOptions = {
   markdown: string
@@ -36,4 +37,4 @@ export function createMarkdownViewer(
   }
 }
 
-export default createMarkdownViewer
+export default MarkdownViewer

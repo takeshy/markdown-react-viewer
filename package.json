@@ -1,14 +1,21 @@
 {
   "name": "markdown-react-viewer",
-  "version": "1.0.1",
-  "type": "module",
-  "description": "A React component for rendering Markdown with GitHub Flavored Markdown support",
-  "main": "dist/markdown-viewer.js",
-  "types": "dist/markdown-viewer.d.ts",
+  "version": "1.1.1",
+  "license": "MIT",
+  "author": "takesy<takesy.morito@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/takeshy/markdown-react-viewer"
   },
+  "type": "module",
+  "description": "A React component for rendering Markdown with GitHub Flavored Markdown support",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./bundled": "./dist/index.js"
+  },
+  "types": "./dist/index.d.ts",
   "files": [
     "README.md",
     "dist"
@@ -20,11 +27,9 @@
     "gfm",
     "github-flavored-markdown"
   ],
-  "author": "takeshy",
-  "license": "MIT",
   "scripts": {
     "dev": "vite --host",
-    "build": "tsup src/markdown-viewer.tsx",
+    "build": "tsup src/index.tsx",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",

@@ -19,6 +19,24 @@ export default function SampleViewer() {
 }
 ```
 
+## Direct Initialization
+
+You can also initialize the editor directly on an HTML element:
+
+# you use rails importmap, add the following line to your importmap.rb
+※ @latest is the latest version of wysimark-lite. If you want to specify a version, replace @latest with the version you want to use.
+```
+pin "markdown-react-viewer", to: "https://cdn.jsdelivr.net/npm/markdown-react-viewer@latest/dist/index.js"
+```
+
+```html
+<div id="editor"></div>
+<script type="module">
+  import {createMarkdownViewer } from "markdown-react-viewer"
+  const viewer = createMarkdownViewer(document.getElementById("viewer"), { markdown: markdown, className="markdown-body" })
+</script>
+```
+
 run storybook
 
 ```bash
